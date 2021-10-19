@@ -1,5 +1,5 @@
 CREATE SCHEMA IF NOT EXISTS popular_flowers;
-USE popular-flowers;
+USE popular_flowers;
 
 CREATE TABLE flowers(
     id INT NOT NULL AUTO_INCREMENT,
