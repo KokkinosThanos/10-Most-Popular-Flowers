@@ -1,0 +1,16 @@
+{
+    "apps": [
+      {
+        "name": "Most_Popular_Flowers",
+        "script": "./app.js",
+        "instances": 1,
+        "exec_mode": "cluster",
+        "cron_restart": "*/15 * * * *",
+        "autorestart" : false,
+        "env": {
+          "NODE_ENV": "production",
+          "PORT": "600"
+        }
+      }
+    ]
+  }

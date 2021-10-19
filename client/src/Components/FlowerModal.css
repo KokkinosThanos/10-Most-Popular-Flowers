@@ -1,0 +1,62 @@
+.flower-modal {
+  position: absolute;
+  left: 50%;
+  top: 160px;
+  transform: translate(-50%, -0);
+  width: 700px;
+  height: 450px;
+  border-radius: 10px;
+}
+
+.flower-modal-section {
+  position: relative;
+  width: 700px;
+  height: 450px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: wheat;
+}
+
+.selectedImage {
+  width: 700px;
+  height: 310px;
+  margin-top: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.selectedName {
+  position: absolute;
+  width: 700px;
+  height: 40px;
+  line-height: 40px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(26, 25, 25);
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 5px;
+}
+
+.selectedDescription {
+  position: absolute;
+  width: 700px;
+  height: 100px;
+  top: 350px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 20px 30px 30px;
+  text-align: center;
+  line-height: 22px;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.95);
+  color: rgb(26, 25, 25);
+}

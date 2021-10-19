@@ -1,0 +1,10 @@
+type Query {
+  flowers: [Flower!]!
+}
+
+type Flower {
+  id: ID!
+  name: String!
+  description: String!
+  image: String!
+}

@@ -1,0 +1,38 @@
+version: "3.8"
+services: 
+    database:
+        build: ./database
+        environment:
+        - MYSQL_ROOT_PASSWORD=secret
+        - MYSQL_ROOT_USER=root
+        - MYSQL_DATABASE=popular-flowers
+        ports: 
+            - "3008:3306"
+        container_name: mysql_PopularFlowers
+        restart: always
+    server:
+        build: ./server
+        ports: 
+            - '602:600'
+        container_name: express_PopularFlowers
+        depends_on:
+            - database
+        environment:
+            - MYSQL_HOST=mysql_PopularFlowers
+            - MYSQL_PORT=3008
+            - MYSQL_ROOT_PASSWORD=secret
+            - MYSQL_ROOT_USER=root
+            - MYSQL_DATABASE=popular-flowers
+        stdin_open: true
+        tty: true
+        restart: always      
+    client:
+        build: ./client
+        ports: 
+            - '3335:3000'
+        container_name: react_PopularFlowers
+        stdin_open: true
+        tty: true
+        depends_on: 
+            - server
+        restart: always
