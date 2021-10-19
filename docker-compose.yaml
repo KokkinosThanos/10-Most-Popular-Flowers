@@ -22,7 +22,7 @@ services:
             - MYSQL_PORT=3008
             - MYSQL_ROOT_PASSWORD=secret
             - MYSQL_ROOT_USER=root
-            - MYSQL_DATABASE=popular-flowers
+            - MYSQL_DATABASE=popular_flowers
         stdin_open: true
         tty: true
         restart: always      
