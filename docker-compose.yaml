@@ -5,7 +5,7 @@ services:
         environment:
         - MYSQL_ROOT_PASSWORD=secret
         - MYSQL_ROOT_USER=root
-        - MYSQL_DATABASE=popular-flowers
+        - MYSQL_DATABASE=popular_flowers
         ports: 
             - "3008:3306"
         container_name: mysql_PopularFlowers
