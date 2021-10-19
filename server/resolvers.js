@@ -1,6 +1,6 @@
 const { Sequelize, QueryTypes } = require("sequelize");
 
-const sequelize = new Sequelize("popular-flowers", "root", "secret", {
+const sequelize = new Sequelize("popular_flowers", "root", "secret", {
   host: "mysql_PopularFlowers",
   dialect: "mysql",
 });
